@@ -1,7 +1,7 @@
-{
+    {
     "name": "vss/resources-firewall-bundle",
     "description": "Protect your resources with symfony roles.",
-    "type": "Symfony2 Bundle",
+    "type": "symfony2-bundle",
     "license": "MIT",
     "authors": [
         {
