@@ -14,7 +14,7 @@
         "symfony/symfony": "2.*",
         "dfridrich/php-mime-type": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Vss\\Bundle\\ResourcesFirewallBundle\\": ""
