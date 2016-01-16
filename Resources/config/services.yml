@@ -4,4 +4,4 @@ services:
 #        arguments: [@service_id, "plain_value", %parameter%]
     vss_resources_firewall.firewall:
         class: Vss\Bundle\ResourcesFirewallBundle\Model\Firewall
-        arguments: [@kernel, @security.context]
+        arguments: ["@kernel", "@security.context"]
