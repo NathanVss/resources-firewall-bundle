@@ -1,0 +1,7 @@
+services:
+#    vss_resources_firewall.example:
+#        class: Vss\Bundle\ResourcesFirewallBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    vss_resources_firewall.firewall:
+        class: Vss\ResourcesFirewallBundle\Model\Firewall
+        arguments: ["@kernel", "@security.context"]

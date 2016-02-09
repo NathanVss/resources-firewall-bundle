@@ -1,0 +1,23 @@
+    {
+    "name": "vss/resources-firewall-bundle",
+    "description": "Protect your resources with symfony2 firewalls.",
+    "type": "symfony2-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan",
+            "email": "nathan.vasse@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": "2.*",
+        "dfridrich/php-mime-type": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Vss\\ResourcesFirewallBundle\\": ""
+        }
+    }
+}
