@@ -1,4 +1,4 @@
-    {
+{
     "name": "vss/resources-firewall-bundle",
     "description": "Protect your resources with symfony2 firewalls.",
     "type": "symfony2-bundle",
@@ -12,7 +12,8 @@
     "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.*",
-        "dfridrich/php-mime-type": "*"
+        "dfridrich/php-mime-type": "*",
+        "vss/resources-firewall-bundle": "^1.1"
     },
     "minimum-stability": "dev",
     "autoload": {
