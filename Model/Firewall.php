@@ -8,6 +8,7 @@
 
 namespace Vss\ResourcesFirewallBundle\Model;
 
+use Defr\PhpMimeType\MimeType;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
@@ -82,7 +83,7 @@ class Firewall
         if (!file_exists($fullPath)) {
             throw new FileNotFoundException(sprintf("The file %s was not found", $filename));
         }
-        $contentType = \Defr\MimeType::get($filename);
+        $contentType = MimeType::get($filename);
         return ['contentType' => $contentType, 'content' => file_get_contents($fullPath)];
     }
 }
