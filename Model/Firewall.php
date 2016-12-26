@@ -11,6 +11,7 @@ namespace Vss\ResourcesFirewallBundle\Model;
 use Defr\PhpMimeType\MimeType;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
+use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpFoundation\Response;
@@ -27,7 +28,7 @@ class Firewall
     private $kernel;
 
     /**
-     * @var
+     * @var AuthorizationCheckerInterface
      */
     private $securityContext;
 

@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.9",
-        "symfony/symfony": "2.*",
+        "php": ">=5.5.9",
+        "symfony/symfony": "3.2.*",
         "dfridrich/php-mime-type": "*"
     },
     "minimum-stability": "dev",
